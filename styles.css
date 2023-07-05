@@ -1,6 +1,20 @@
 p{ 
-    Color: rgba(32, 216, 173, 0.773);     text-align:  left;        font-size: 10pt;
+    Color: rgb(255, 255, 255);     text-align:  left;        font-size: 10pt;
  }
  h1{ 
-    Color: rgba(32, 216, 173, 0.773);     font-weight: bold;
+    Color: rgba(255, 255, 255, 0.773);     font-weight: bold;
  }
+
+ body {
+    background: #074e95f6;
+    color: white;
+    font-family: Arial,;
+}
+
+p {
+    min-height: 1em;
+}
+
+a {
+    color: white;
+}
