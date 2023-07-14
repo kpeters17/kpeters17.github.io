@@ -11,67 +11,73 @@
     <h1>Assignment 13</h1>
     <canvas id="text" width="240" height="120">
         This text is displayed if your browser does not support HTML5 Canvas.
-      </canvas>
-      
-      <script>
+    </canvas>
+
+    <script>
         var text = document.getElementById("text");
         var context = text.getContext("2d");
-      
+
         context.strokeStyle = "red";
         context.fillStyle = "red";
-      
+
         // Select font, alignment, draw text, and fill characters
         context.font = "24px sans-serif";
-        context.textAlign="right";
+        context.textAlign = "right";
         context.strokeText("Web110", 100, 40);
         context.fillText("Web110", 100, 40);
-      </script>
-<p>
+    </script>
+    <p>
     <div id="display"></div>
- 
-    <script>
-    document.getElementById('display').innerHTML = 'Hello ...! Kirk Peters';
-    </script></p>
-    <p><p id="text"></p>
 
     <script>
-      document.getElementById("text").innerHTML = Date();
-    </script></p>
+        document.getElementById('display').innerHTML = 'Hello ...! Kirk Peters';
+    </script>
+    </p>
+    <p>
+    <p id="text"></p>
 
-  <canvas id="line" width="360" height="240">
-    This text is displayed if your browser does not support HTML5 Canvas.
-  </canvas>
-  
-  <script>
-    var line = document.getElementById("line");
-    var context = line.getContext("2d");
-  
-    // Draw a line, width 4
-    context.lineWidth = 7;
-    context.moveTo(21, 42);
-    context.lineTo(190, 42);
-    context.stroke();
-  </script>
+    <script>
+        document.getElementById("text").innerHTML = Date();
+    </script>
+    </p>
 
-  
-  <canvas id="circle" width="360" height="240">
-    This text is displayed if your browser does not support HTML5 Canvas.
-  </canvas>
-  
-  <script>
-    var circle = document.getElementById("circle");
-    var context = circle.getContext("2d");
-  
-    // Draw a red circle, radius 35
-    context.beginPath();
-    context.fillStyle = 'green';
-    context.arc(60, 140, 45, 0, 2 * Math.PI, false);
-    context.fill();
-    context.closePath();
-  </script>
-    <p>This lesson was 
+    <canvas id="line" width="360" height="240">
+        This text is displayed if your browser does not support HTML5 Canvas.
+    </canvas>
+
+    <script>
+        var line = document.getElementById("line");
+        var context = line.getContext("2d");
+
+        // Draw a line, width 4
+        context.lineWidth = 7;
+        context.moveTo(21, 42);
+        context.lineTo(190, 42);
+        context.stroke();
+    </script>
+
+
+    <canvas id="circle" width="360" height="240">
+        This text is displayed if your browser does not support HTML5 Canvas.
+    </canvas>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var context = circle.getContext("2d");
+
+        // Draw a red circle, radius 35
+        context.beginPath();
+        context.fillStyle = 'green';
+        context.arc(60, 140, 45, 0, 2 * Math.PI, false);
+        context.fill();
+        context.closePath();
+    </script>
+    <p>This lesson was about Javascript and how to use it in an HTML website. I learned how powerful of a language
+        Javascript can be and some of the many tools it has. Java has the ability to write text, display popups, and
+        even create images. The canvas tag is used to create graphics such as circles, triangles, lines and other
+        polygons. In the future I will not only incorporate HTML or CSS in any website but Javascript as well. By using
+        javascript I can bring a website to the next level and create a much more interactive experience with the user.
     </p>
 </body>
 
 </html>
-
