@@ -38,6 +38,36 @@
     context.strokeText(" Canvas is awesome", 100, 40);
     context.fillText(" Canvas is awesome", 100, 40);
   </script>
+  <canvas id="example" width="360" height="240">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+  <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
+  
+    // Draw a line, width 4
+    context.lineWidth = 7;
+    context.moveTo(21, 42);
+    context.lineTo(190, 42);
+    context.stroke();
+  </script>
+  <canvas id="example" width="260" height="120">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+  <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
+  
+    // Draw a red circle, radius 35
+    context.beginPath();
+    context.fillStyle = 'green';
+    context.arc(40, 240, 25, 1, 5 * Math.PI, false);
+    context.fill();
+    context.closePath();
+  </script>
+  
 
     <p>This lesson was 
     </p>
