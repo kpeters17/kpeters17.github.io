@@ -9,7 +9,23 @@
 
 <body>
     <h1>Assignment 13</h1>
-
+    <canvas id="text" width="240" height="120">
+        This text is displayed if your browser does not support HTML5 Canvas.
+      </canvas>
+      
+      <script>
+        var text = document.getElementById("text");
+        var context = text.getContext("2d");
+      
+        context.strokeStyle = "red";
+        context.fillStyle = "red";
+      
+        // Select font, alignment, draw text, and fill characters
+        context.font = "24px sans-serif";
+        context.textAlign="right";
+        context.strokeText("Web110", 100, 40);
+        context.fillText("Web110", 100, 40);
+      </script>
 <p>
     <div id="display"></div>
  
@@ -21,23 +37,7 @@
     <script>
       document.getElementById("text").innerHTML = Date();
     </script></p>
-<canvas id="text" width="550" height="120">
-    This text is displayed if your browser does not support HTML5 Canvas.
-  </canvas>
-  
-  <script>
-    var text = document.getElementById("text");
-    var context = text.getContext("2d");
-  
-    context.strokeStyle = "red";
-    context.fillStyle = "red";
-  
-    // Select font, alignment, draw text, and fill characters
-    context.font = "24px sans-serif";
-    context.textAlign="right";
-    context.strokeText("Web110", 100, 40);
-    context.fillText("Web110", 100, 40);
-  </script>
+
   <canvas id="line" width="360" height="240">
     This text is displayed if your browser does not support HTML5 Canvas.
   </canvas>
