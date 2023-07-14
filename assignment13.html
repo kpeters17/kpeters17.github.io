@@ -21,6 +21,23 @@
     <script>
       document.getElementById("text").innerHTML = Date();
     </script></p>
+<canvas id="example" width="210" height="120">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+  <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
+  
+    context.strokeStyle = "red";
+    context.fillStyle = "red";
+  
+    // Select font, alignment, draw text, and fill characters
+    context.font = "32px sans-serif";
+    context.textAlign="center";
+    context.strokeText("Canvas is awesome", 120, 40);
+    context.fillText("Canvas is awesome", 120, 40);
+  </script>
 
     <p>This lesson was 
     </p>
