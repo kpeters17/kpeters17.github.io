@@ -26,14 +26,7 @@
         context.strokeText("Web110", 100, 40);
         context.fillText("Web110", 100, 40);
     </script>
-    <p>
-    <div id="display"></div>
-
-    <script>
-        document.getElementById('display').innerHTML = 'Hello ...! Kirk Peters';
-    </script>
-    </p>
-    <p>
+    
     <p id="text"></p>
 
     <script>
@@ -72,7 +65,12 @@
         context.fill();
         context.closePath();
     </script>
-    <p>This lesson was about Javascript and how to use it in an HTML website. I learned how powerful of a language
+    <p><div id="display"></div>
+
+        <script>
+            document.getElementById('display').innerHTML = 'Hello ...! Kirk Peters';
+        </script>
+        This lesson was about Javascript and how to use it in an HTML website. I learned how powerful of a language
         Javascript can be and some of the many tools it has. Java has the ability to write text, display popups, and
         even create images. The canvas tag is used to create graphics such as circles, triangles, lines and other
         polygons. In the future I will not only incorporate HTML or CSS in any website but Javascript as well. By using
