@@ -16,11 +16,8 @@
     <script>
         var text = document.getElementById("text");
         var context = text.getContext("2d");
-
         context.strokeStyle = "red";
         context.fillStyle = "red";
-
-        // Select font, alignment, draw text, and fill characters
         context.font = "24px sans-serif";
         context.textAlign = "right";
         context.strokeText("Web110", 100, 40);
@@ -41,8 +38,6 @@
     <script>
         var line = document.getElementById("line");
         var context = line.getContext("2d");
-
-        // Draw a line, width 4
         context.lineWidth = 7;
         context.moveTo(21, 42);
         context.lineTo(190, 42);
@@ -57,8 +52,6 @@
     <script>
         var circle = document.getElementById("circle");
         var context = circle.getContext("2d");
-
-        // Draw a red circle, radius 35
         context.beginPath();
         context.fillStyle = 'green';
         context.arc(60, 140, 45, 0, 2 * Math.PI, false);
