@@ -3,16 +3,27 @@
 
 
 <head>
-    
+
     <title>Assignment 14</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h1>Assignment 14</h1>
+    SELECT COUNT(DISTINCT Country) FROM Customers;
+    SELECT * FROM Customers,Suppliers;
+    INSERT INTO Customers (CustomerName, City, Country) VALUES ('Kirk', 'Chicago', 'USA');
+    UPDATE Customers SET ContactName = 'Bob', City= 'Denver' WHERE CustomerID = 2;
+    DELETE FROM Customers WHERE Country = 'Canada';
 
     <p>
-        
+        This activity was about structured query language and how to use it to retrieve data from tables. SQL is used
+        for storing, manipulating and reading data from databases. I learned how to create SQL commands to not only
+        select fields to display but also delete, edit or insert more data. This is something that I can use in multiple
+        ways in the future. SQL can be used to create an inventory database that I can easily sort by whichever field I
+        want or it can even be used for human resources to create a list of all employees with all their personal
+        information. SQL can be a very powerful tool in order to stay organized and make a large amount of information
+        more accessible which will then help me stay more organized.
     </p>
 </body>
 
