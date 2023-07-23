@@ -10,12 +10,29 @@
 
 <body>
     <h1>Assignment 14</h1>
-    SELECT COUNT(DISTINCT Country) FROM Customers;
-    SELECT * FROM Customers,Suppliers;
-    INSERT INTO Customers (CustomerName, City, Country) VALUES ('Kirk', 'Chicago', 'USA');
-    UPDATE Customers SET ContactName = 'Bob', City= 'Denver' WHERE CustomerID = 2;
-    DELETE FROM Customers WHERE Country = 'Canada';
-
+    SELECT * FROM Customers;
+    SELECT CustomerID, CustomerName FROM Customers;
+    SELECT customername, address, city, postalcode FROM Customers WHERE Country='UK';
+    SELECT contactname, customername FROM Customers ORDER BY contactname;
+    SELECT COUNT(*) FROM Customers;
+    SELECT COUNT(*) FROM Customers GROUP BY Country;
+    SELECT customers.customername, orders.orderid, orders.orderdate
+    FROM customers
+    INNER JOIN orders ON customers.customerid = orders.customerid;
+    SELECT customers.customername, orders.orderid AS "Order Number", orders.orderdate
+    FROM customers
+    INNER JOIN orders ON customers.customerid = orders.customerid;
+    SELECT customers.customername, orders.orderid AS "Order Number", orders.orderdate
+    FROM customers
+    INNER JOIN orders ON customers.customerid = orders.customerid
+    ORDER BY customers.customername, orders.orderid;
+    INSERT INTO shippers (shipperid, shippername, phone)
+    VALUES (4, 'On Time Delivery', '(503) 555 0123');
+    UPDATE products
+    SET price = price + 1;
+    DELETE FROM shippers
+    WHERE shipperid = 4;
+                        
     <p>
         This activity was about structured query language and how to use it to retrieve data from tables. SQL is used
         for storing, manipulating and reading data from databases. I learned how to create SQL commands to not only
